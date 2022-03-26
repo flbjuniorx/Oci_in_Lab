@@ -50,3 +50,9 @@ variable "subnet_display_name" {
   type = string
   default = "public-subnet"
 }
+
+# INTERNET GATEWAY
+variable internet_gateway_display_name {
+   type = string
+   default = "internet-gateway"
+}
