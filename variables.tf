@@ -4,6 +4,11 @@ variable "compartment_id" {
   default     = "ocid1.compartment.oc1..aaaaaaaapekqo57mjqosmczdeqfbzxco5lymcs4juobd2wowdhhdn3os2hfq"
 }
 
+variable "instance_availability_domain" {
+	type = string
+	default = "coLf:SA-SAOPAULO-1-AD-1"
+}
+
 # VCN Variables
 
 variable "vcn_cidr_block" {
@@ -52,7 +57,13 @@ variable "subnet_display_name" {
 }
 
 # INTERNET GATEWAY
-variable internet_gateway_display_name {
+variable "internet_gateway_display_name" {
    type = string
    default = "internet-gateway"
+}
+
+# COMPUTE INSTANCES
+variable "instance_shape" {
+	type = string
+	default = "VM.Standard.A1.Flex"
 }
