@@ -10,7 +10,7 @@ resource "oci_core_instance" "test_instance" {
 		source_type = "image"
 	}
 	
-	create_vinc_details {
+	create_vnic_details {
 		subnet_id = oci_core_subnet.test_subnet.id 
 	}
 }

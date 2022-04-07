@@ -35,7 +35,7 @@ variable "vcn_dns_label" {
   default =
 }
 
-variavle "vcn_is_ipv6enabled" {
+variable "vcn_is_ipv6enabled" {
   description = ""
   type = boolean
   default = 
